@@ -1,0 +1,61 @@
+.modal {
+  position: fixed;
+  display: none;
+  inset: 0;
+  z-index: 999;
+  background-color: $modalBackgroundColor;
+  &--active {
+    display: block;
+  }
+  &__clicks {
+    font-weight: 700;
+  }
+  &__heading {
+    font-size: $fontHeadingsDesktop;
+
+    @include sm {
+      font-size: $fontHeadingsMobile;
+    }
+  }
+  &__description {
+    font-size: $fontParagraphsDesktop;
+
+    @include sm {
+      font-size: $fontParagraphsMobile;
+    }
+  }
+  &__window {
+    position: relative;
+    top: 0;
+    transform: translateY(50%);
+    background-color: $modalWindowBackgroundColor;
+    margin: 0 50px;
+    padding: 50px;
+    text-align: center;
+
+    @include md {
+      margin: 0 30px;
+      padding: 100px 20px;
+      transform: translateY(30%);
+    }
+    @include sm {
+      margin: 0;
+    }
+  }
+}
+
+.close-button {
+  position: absolute;
+  pointer-events: auto;
+  right: 30px;
+  top: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.reset-button {
+  display: none;
+  &--active {
+    display: block;
+  }
+}

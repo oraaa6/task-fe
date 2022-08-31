@@ -29,6 +29,40 @@
   </head>
   <body>
     <main class="wrapper">
+      <div class="modal">
+        <div class="modal__window">
+          <h1 class="modal__heading">Alert!</h1>
+          <p class="modal__description">
+            You have clicked <span class="modal__clicks">X times</span> to
+            related button
+          </p>
+          <button class="close-button" type="button" aria-label="Close">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 6L6 18"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M6 6L18 18"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="reset-button" aria-label="Button-Reset">Reset</button>
+        </div>
+      </div>
       <section class="section">
         <div class="section__image-container">
           <img
@@ -48,5 +82,8 @@
         </div>
       </section>
     </main>
+    <script src="./src/js/OpenModal/openModal.js"></script>
+    <script src="./src/js/ClicksCounter/clicksCounter.js"></script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
