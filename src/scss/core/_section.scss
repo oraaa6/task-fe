@@ -1,0 +1,36 @@
+.section {
+  margin: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  &__image-container {
+    max-width: 505px;
+  }
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+  @include md {
+    flex-direction: column-reverse;
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+  &__title {
+    font-size: $fontHeadingsDesktop;
+    @include sm {
+      font-size: $fontHeadingsMobile;
+    }
+  }
+  &__paragraph {
+    font-size: $fontParagraphsDesktop;
+    @include sm {
+      font-size: $fontParagraphsMobile;
+    }
+  }
+}

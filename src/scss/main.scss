@@ -1,5 +1,13 @@
-@import "./core/_section.scss";
-@import "./core/_btn.scss";
 @import "./skins/_properties.scss";
 @import "./skins/_reset.scss";
+@import "./skins/_mixins.scss";
+@import "./core/_section.scss";
+@import "./core/_btn.scss";
 
+body {
+  font-family: $baseFont;
+}
+.wrapper {
+  max-width: $pageWrapperWidth;
+  margin: 0 auto;
+}
