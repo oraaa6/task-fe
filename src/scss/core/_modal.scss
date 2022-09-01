@@ -55,6 +55,9 @@
 
 .reset-button {
   display: none;
+  padding: 5px 20px;
+  border: none;
+  margin: 30px auto 0 auto;
   &--active {
     display: block;
   }

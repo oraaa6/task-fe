@@ -22,13 +22,12 @@ class openModal {
     document.addEventListener("click", () => {
       if (this.modal.classList.contains("modal--active")) {
         this.modal.classList.remove("modal--active");
-        document.querySelector(".modal__window").style.pointerEvents = "none";
+        document.querySelector(".modal__window").style.backgroundColor = "none";
       } else return;
     });
   }
   showModal() {
     this.open();
     this.close();
-    // this.closingByClickingOnDocument();
   }
 }
